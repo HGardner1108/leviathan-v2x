@@ -1,0 +1,5 @@
+# Razer Leviathan V2 X (1532:054a) — reset PCM,1 to 100% on every plug-in.
+# PCM,1 defaults to 29% (-20dB) which silently limits max volume.
+ACTION=="add", SUBSYSTEM=="sound", KERNEL=="controlC[0-9]*", \
+  ATTRS{idVendor}=="1532", ATTRS{idProduct}=="054a", \
+  RUN+="/bin/systemd-run --no-block /usr/local/bin/razer-leviathan-fix.sh %k"
