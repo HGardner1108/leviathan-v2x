@@ -2,6 +2,8 @@
 
 Two independent fixes for the Razer Leviathan V2 X on Linux: volume control and RGB lighting.
 
+Built by directing Claude Code, then testing and verifying the fixes on my own hardware.
+
 ---
 
 ## The volume problem
